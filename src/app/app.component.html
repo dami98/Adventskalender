@@ -1,20 +1,200 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<div *ngIf="loadAllPresentsTillToday()" width="100%" height="100%">
+  <h1>test</h1>
+<table align="center">
 
+
+  <tr>
+    <td *ngIf="day8h; else day8scratched">
+        <img src=".\assets\AdventskalenderIcons\8h.png" (click)="scratchOpenToday('8')">  
+    </td>
+    <td *ngIf="day21h; else day21scratched">
+        <img src=".\assets\AdventskalenderIcons\21h.png" (click)="scratchOpenToday('21')">  
+    </td> 
+    <td *ngIf="day23h; else day23scratched">
+        <img src=".\assets\AdventskalenderIcons\23h.png" (click)="scratchOpenToday('23')">  
+    </td> 
+
+  </tr>
+
+
+  <tr>
+      <td *ngIf="day6h; else day6scratched">
+          <img src=".\assets\AdventskalenderIcons\6h.png" (click)="scratchOpenToday('6')">  
+      </td> 
+      <td *ngIf="day20h; else day20scratched">
+          <img src=".\assets\AdventskalenderIcons\20h.png" (click)="scratchOpenToday('20')">  
+      </td> 
+      <td *ngIf="day10h; else day10scratched">
+          <img src=".\assets\AdventskalenderIcons\10h.png" (click)="scratchOpenToday('10')">  
+      </td> 
+    </tr>
+
+
+    <tr>
+        <td *ngIf="day17h; else day17scratched">
+            <img src=".\assets\AdventskalenderIcons\17h.png" (click)="scratchOpenToday('17')">  
+        </td>
+        <td *ngIf="day11h; else day11scratched">
+            <img src=".\assets\AdventskalenderIcons\11h.png" (click)="scratchOpenToday('11')">  
+        </td> 
+        <td *ngIf="day1h; else day2scratched">
+            <img src=".\assets\AdventskalenderIcons\1h.png" (click)="scratchOpenToday('1')">  
+        </td> 
+      </tr>
+
+
+      <tr>
+          <td *ngIf="day9h; else day9scratched">
+              <img src=".\assets\AdventskalenderIcons\9h.png" (click)="scratchOpenToday('9')">  
+          </td>
+          <td *ngIf="day3h; else day3scratched">
+              <img src=".\assets\AdventskalenderIcons\3h.png" (click)="scratchOpenToday('3')">  
+          </td> 
+          <td *ngIf="day5h; else day5scratched">
+              <img src=".\assets\AdventskalenderIcons\5h.png" (click)="scratchOpenToday('5')">  
+          </td> 
+        </tr>
+      
+
+        <tr>
+            <td *ngIf="day12h; else day12scratched">
+                <img src=".\assets\AdventskalenderIcons\12h.png" (click)="scratchOpenToday('12')">  
+            </td>
+            <td *ngIf="day15h; else day15scratched">
+                <img src=".\assets\AdventskalenderIcons\15h.png" (click)="scratchOpenToday('15')">  
+            </td> 
+            <td *ngIf="day22h; else day22scratched">
+                <img src=".\assets\AdventskalenderIcons\22h.png" (click)="scratchOpenToday('22')">  
+            </td> 
+          </tr>
+        
+    
+          <tr>
+              <td *ngIf="day18h; else day18scratched">
+                  <img src=".\assets\AdventskalenderIcons\18h.png" (click)="scratchOpenToday('18')">  
+              </td>
+              <td *ngIf="day4h; else day4scratched">
+                  <img src=".\assets\AdventskalenderIcons\4h.png" (click)="scratchOpenToday('4')">  
+              </td> 
+              <td *ngIf="day13h; else day13scratched">
+                  <img src=".\assets\AdventskalenderIcons\13h.png" (click)="scratchOpenToday('13')">  
+              </td> 
+            </tr>
+          
+  
+            <tr>
+                <td *ngIf="day24h; else day24scratched">
+                    <img src=".\assets\AdventskalenderIcons\24h.png" (click)="scratchOpenToday('24')">  
+                </td>
+                <td *ngIf="day19h; else day19scratched">
+                    <img src=".\assets\AdventskalenderIcons\19h.png" (click)="scratchOpenToday('19')">  
+                </td> 
+                <td *ngIf="day14h; else day14scratched">
+                    <img src=".\assets\AdventskalenderIcons\14h.png" (click)="scratchOpenToday('14')">  
+                </td> 
+              </tr>
+
+
+              <tr>
+                  <td *ngIf="day2; else day2scratched">
+                      <img src=".\assets\AdventskalenderIcons\2h.png" (click)="scratchOpenToday('2')">  
+                  </td>
+                  <td *ngIf="day16h; else day16scratched">
+                      <img src=".\assets\AdventskalenderIcons\16h.png" (click)="scratchOpenToday('16')">  
+                  </td> 
+                  <td *ngIf="day7h; else day7scratched">
+                      <img src=".\assets\AdventskalenderIcons\7h.png" (click)="scratchOpenToday('7')">  
+                  </td> 
+                </tr>
+</table>
+</div>
+<ng-template #day1scratched>
+    <img src=".\assets\AdventskalenderIcons\1o.png">
+</ng-template>
+
+<ng-template #day2scratched>
+    <img src=".\assets\AdventskalenderIcons\2o.png">
+</ng-template>
+
+<ng-template #day3scratched>
+    <img src=".\assets\AdventskalenderIcons\3o.png">
+</ng-template>
+
+<ng-template #day4scratched>
+    <img src=".\assets\AdventskalenderIcons\4o.png">
+</ng-template>
+
+<ng-template #day5scratched>
+    <img src=".\assets\AdventskalenderIcons\5o.png">
+</ng-template>
+
+<ng-template #day6scratched>
+    <img src=".\assets\AdventskalenderIcons\6o.png">
+</ng-template>
+
+<ng-template #day7scratched>
+    <img src=".\assets\AdventskalenderIcons\7o.png">
+</ng-template>
+
+<ng-template #day8scratched>
+    <img src=".\assets\AdventskalenderIcons\8o.png">
+</ng-template>
+
+<ng-template #day9scratched>
+    <img src=".\assets\AdventskalenderIcons\9o.png">
+</ng-template>
+
+<ng-template #day10scratched>
+    <img src=".\assets\AdventskalenderIcons\10o.png">
+</ng-template>
+
+<ng-template #day11scratched>
+    <img src=".\assets\AdventskalenderIcons\11o.png">
+</ng-template>
+
+<ng-template #day12scratched>
+    <img src=".\assets\AdventskalenderIcons\12o.png">
+</ng-template>
+
+<ng-template #day13scratched>
+    <img src=".\assets\AdventskalenderIcons\13o.png">
+</ng-template>
+
+<ng-template #day14scratched>
+    <img src=".\assets\AdventskalenderIcons\14o.png">
+</ng-template>
+
+<ng-template #day15scratched>
+    <img src=".\assets\AdventskalenderIcons\15o.png">
+</ng-template>
+
+<ng-template #day16scratched>
+    <img src=".\assets\AdventskalenderIcons\16o.png">
+</ng-template>
+
+<ng-template #day17scratched>
+    <img src=".\assets\AdventskalenderIcons\17o.png">
+</ng-template>
+
+<ng-template #day18scratched>
+    <img src=".\assets\AdventskalenderIcons\18o.png">
+</ng-template>
+
+<ng-template #day19scratched>
+    <img src=".\assets\AdventskalenderIcons\19o.png">
+</ng-template>
+<ng-template #day20scratched>
+    <img src=".\assets\AdventskalenderIcons\20o.png">
+</ng-template>
+<ng-template #day21scratched>
+    <img src=".\assets\AdventskalenderIcons\21o.png">
+</ng-template>
+<ng-template #day22scratched>
+    <img src=".\assets\AdventskalenderIcons\22o.png">
+</ng-template>
+<ng-template #day23scratched>
+    <img src=".\assets\AdventskalenderIcons\23o.png">
+</ng-template>
+<ng-template #day24scratched>
+    <img src=".\assets\AdventskalenderIcons\24o.png">
+</ng-template>
