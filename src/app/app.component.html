@@ -1,8 +1,5 @@
 <div *ngIf="loadAllPresentsTillToday()" width="100%" height="100%">
-  <h1>test</h1>
 <table align="center">
-
-
   <tr>
     <td *ngIf="day8h; else day8scratched">
         <img src=".\assets\AdventskalenderIcons\8h.png" (click)="scratchOpenToday('8')">  
@@ -96,7 +93,7 @@
 
 
               <tr>
-                  <td *ngIf="day2; else day2scratched">
+                  <td *ngIf="day2h; else day2scratched">
                       <img src=".\assets\AdventskalenderIcons\2h.png" (click)="scratchOpenToday('2')">  
                   </td>
                   <td *ngIf="day16h; else day16scratched">

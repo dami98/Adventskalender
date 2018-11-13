@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { BrowserDomAdapter } from '@angular/platform-browser/src/browser/browser_adapter';
 
 
 @Component({
@@ -34,11 +35,92 @@ export class AppComponent {
   day2h = true;
   day1h = true;
   
-  public scratchOpenToday(test:string)
+  public scratchOpenToday(dayToScratch:string)
   {
 
+    let numberOfToday = new Date().getDate();
 
-    this.day21h = false;
+    if(+dayToScratch == numberOfToday)
+    {
+    switch(+dayToScratch)
+    {
+      case 1:
+        this.day1h = false;
+      break;
+	  case 1:
+        this.day1h = false;
+      break;
+	  case 2:
+        this.day2h = false;
+      break;
+	  case 3:
+        this.day3h = false;
+      break;
+	  case 4:
+        this.day4h = false;
+      break;
+	  case 5:
+        this.day5h = false;
+      break;
+	  case 6:
+        this.day6h = false;
+      break;
+	  case 7:
+        this.day7h = false;
+      break;
+	  case 8:
+        this.day8h = false;
+      break;
+	  case 9:
+        this.day9h = false;
+      break;
+	  case 10:
+        this.day10h = false;
+      break;
+	  case 11:
+        this.day11h = false;
+      break;
+	  case 12:
+        this.day12h = false;
+      break;
+	  case 13:
+        this.day13h = false;
+      break;
+	  case 14:
+        this.day14h = false;
+      break;
+	  case 15:
+        this.day15h = false;
+      break;
+	  case 16:
+        this.day16h = false;
+      break;
+	  case 17:
+        this.day17h = false;
+      break;
+	  case 18:
+        this.day18h = false;
+      break;
+	  case 19:
+        this.day19h = false;
+      break;
+	  case 20:
+        this.day20h = false;
+      break;
+	  case 21:
+        this.day21h = false;
+      break;
+	  	  case 22:
+        this.day22h = false;
+      break;
+	  	  case 23:
+        this.day23h = false;
+      break;
+	  	  case 24:
+        this.day24h = false;
+      break;
+    }
+  }
   }
   
   public presentsForToday()
@@ -57,8 +139,9 @@ export class AppComponent {
   public loadAllPresentsTillToday(): boolean
   {
     let todayMinus1 = new Date().getDate();
+    let month = new Date().getMonth();
 
-    if(new Date().getMonth() == 12 || new Date().getFullYear() != 2018)
+    if(month == 11 || new Date().getFullYear() != 2018)
     {
       if(new Date().getFullYear() != 2018)
       {
