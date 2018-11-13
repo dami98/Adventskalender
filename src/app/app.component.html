@@ -34,7 +34,7 @@
         <td *ngIf="day11h; else day11scratched">
             <img src=".\assets\AdventskalenderIcons\11h.png" (click)="scratchOpenToday('11')">  
         </td> 
-        <td *ngIf="day1h; else day2scratched">
+        <td *ngIf="day1h; else day1scratched">
             <img src=".\assets\AdventskalenderIcons\1h.png" (click)="scratchOpenToday('1')">  
         </td> 
       </tr>
@@ -106,92 +106,145 @@
 </table>
 </div>
 <ng-template #day1scratched>
+<td>
     <img src=".\assets\AdventskalenderIcons\1o.png">
+</td>
 </ng-template>
 
 <ng-template #day2scratched>
+    <td>
     <img src=".\assets\AdventskalenderIcons\2o.png">
+</td>
 </ng-template>
 
 <ng-template #day3scratched>
+<td>
     <img src=".\assets\AdventskalenderIcons\3o.png">
+</td>
 </ng-template>
 
 <ng-template #day4scratched>
-    <img src=".\assets\AdventskalenderIcons\4o.png">
-</ng-template>
-
-<ng-template #day5scratched>
-    <img src=".\assets\AdventskalenderIcons\5o.png">
-</ng-template>
-
-<ng-template #day6scratched>
-    <img src=".\assets\AdventskalenderIcons\6o.png">
-</ng-template>
-
-<ng-template #day7scratched>
-    <img src=".\assets\AdventskalenderIcons\7o.png">
-</ng-template>
-
-<ng-template #day8scratched>
-    <img src=".\assets\AdventskalenderIcons\8o.png">
-</ng-template>
-
-<ng-template #day9scratched>
-    <img src=".\assets\AdventskalenderIcons\9o.png">
-</ng-template>
-
-<ng-template #day10scratched>
-    <img src=".\assets\AdventskalenderIcons\10o.png">
-</ng-template>
-
-<ng-template #day11scratched>
-    <img src=".\assets\AdventskalenderIcons\11o.png">
-</ng-template>
-
-<ng-template #day12scratched>
-    <img src=".\assets\AdventskalenderIcons\12o.png">
-</ng-template>
-
-<ng-template #day13scratched>
-    <img src=".\assets\AdventskalenderIcons\13o.png">
-</ng-template>
-
-<ng-template #day14scratched>
-    <img src=".\assets\AdventskalenderIcons\14o.png">
-</ng-template>
-
-<ng-template #day15scratched>
-    <img src=".\assets\AdventskalenderIcons\15o.png">
-</ng-template>
-
-<ng-template #day16scratched>
-    <img src=".\assets\AdventskalenderIcons\16o.png">
-</ng-template>
-
-<ng-template #day17scratched>
-    <img src=".\assets\AdventskalenderIcons\17o.png">
-</ng-template>
-
-<ng-template #day18scratched>
-    <img src=".\assets\AdventskalenderIcons\18o.png">
-</ng-template>
-
-<ng-template #day19scratched>
-    <img src=".\assets\AdventskalenderIcons\19o.png">
-</ng-template>
-<ng-template #day20scratched>
-    <img src=".\assets\AdventskalenderIcons\20o.png">
-</ng-template>
-<ng-template #day21scratched>
-    <img src=".\assets\AdventskalenderIcons\21o.png">
-</ng-template>
-<ng-template #day22scratched>
-    <img src=".\assets\AdventskalenderIcons\22o.png">
-</ng-template>
-<ng-template #day23scratched>
-    <img src=".\assets\AdventskalenderIcons\23o.png">
-</ng-template>
-<ng-template #day24scratched>
-    <img src=".\assets\AdventskalenderIcons\24o.png">
-</ng-template>
+        <td>
+          <img src=".\assets\AdventskalenderIcons\4o.png">
+        </td>
+      </ng-template>
+      
+      <ng-template #day5scratched>
+        <td>
+          <img src=".\assets\AdventskalenderIcons\5o.png">
+        </td>
+      </ng-template>
+      
+      <ng-template #day6scratched>
+        <td>
+          <img src=".\assets\AdventskalenderIcons\6o.png">
+        </td>
+      </ng-template>
+      
+      <ng-template #day7scratched>
+        <td>
+          <img src=".\assets\AdventskalenderIcons\7o.png">
+        </td>
+      </ng-template>
+      
+      <ng-template #day8scratched>
+        <td>
+          <img src=".\assets\AdventskalenderIcons\8o.png">
+        </td>
+      </ng-template>
+      
+      <ng-template #day9scratched>
+        <td>
+          <img src=".\assets\AdventskalenderIcons\9o.png">
+        </td>
+      </ng-template>
+      
+      <ng-template #day10scratched>
+        <td>
+          <img src=".\assets\AdventskalenderIcons\10o.png">
+        </td>
+      </ng-template>
+      
+      <ng-template #day11scratched>
+        <td>
+          <img src=".\assets\AdventskalenderIcons\11o.png">
+        </td>
+      </ng-template>
+      
+      <ng-template #day12scratched>
+        <td>
+          <img src=".\assets\AdventskalenderIcons\12o.png">
+        </td>
+      </ng-template>
+      
+      <ng-template #day13scratched>
+        <td>
+          <img src=".\assets\AdventskalenderIcons\13o.png">
+        </td>
+      </ng-template>
+      
+      <ng-template #day14scratched>
+        <td>
+          <img src=".\assets\AdventskalenderIcons\14o.png">
+        </td>
+      </ng-template>
+      
+      <ng-template #day15scratched>
+        <td>
+          <img src=".\assets\AdventskalenderIcons\15o.png">
+        </td>
+      </ng-template>
+      
+      <ng-template #day16scratched>
+        <td>
+          <img src=".\assets\AdventskalenderIcons\16o.png">
+        </td>
+      </ng-template>
+      
+      <ng-template #day17scratched>
+        <td>
+          <img src=".\assets\AdventskalenderIcons\17o.png">
+        </td>
+      </ng-template>
+      
+      <ng-template #day18scratched>
+        <td>
+          <img src=".\assets\AdventskalenderIcons\18o.png">
+        </td>
+      </ng-template>
+      
+      <ng-template #day19scratched>
+        <td>
+          <img src=".\assets\AdventskalenderIcons\19o.png">
+        </td>
+      </ng-template>
+      
+      <ng-template #day20scratched>
+        <td>
+          <img src=".\assets\AdventskalenderIcons\20o.png">
+        </td>
+      </ng-template>
+      
+      <ng-template #day21scratched>
+        <td>
+          <img src=".\assets\AdventskalenderIcons\21o.png">
+        </td>
+      </ng-template>
+      
+      <ng-template #day22scratched>
+        <td>
+          <img src=".\assets\AdventskalenderIcons\22o.png">
+        </td>
+      </ng-template>
+      
+      <ng-template #day23scratched>
+        <td>
+          <img src=".\assets\AdventskalenderIcons\23o.png">
+        </td>
+      </ng-template>
+      
+      <ng-template #day24scratched>
+        <td>
+          <img src=".\assets\AdventskalenderIcons\24o.png">
+        </td>
+      </ng-template>
