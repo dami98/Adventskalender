@@ -39,7 +39,10 @@ export class AppComponent {
   {
 
     let numberOfToday = new Date().getDate();
+    let month = new Date().getMonth();
 
+    if(month == 11)
+    {
     if(+dayToScratch == numberOfToday)
     {
     switch(+dayToScratch)
@@ -119,6 +122,7 @@ export class AppComponent {
 	  	  case 24:
         this.day24h = false;
       break;
+     }
     }
   }
   }
